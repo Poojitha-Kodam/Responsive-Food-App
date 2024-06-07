@@ -1,0 +1,44 @@
+.place-order {
+  margin-top: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.place-order-left {
+  width: 100%;
+  max-width: max(30%, 500px);
+}
+.place-order-left h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.place-order-left input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(212, 208, 208);
+  outline-color: tomato;
+}
+.place-order-left .place-inputs {
+  outline-color: tomato;
+  display: flex;
+
+  gap: 10px;
+}
+.cart-total h2 {
+  font-size: 30px;
+}
+.place-order-right {
+  width: 100%;
+  max-width: max(40%, 500px);
+}
+@media (max-width: 750px) {
+  .place-order {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .cart-total {
+    justify-content: start;
+  }
+}
